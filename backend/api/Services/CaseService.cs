@@ -26,6 +26,9 @@ namespace api.Services
             }
             var project = _projectService.GetProject(case_.ProjectId);
             case_.Project = project;
+            case_.CreateTime = DateTimeOffset.UtcNow;
+            case_.ModifyTime = DateTimeOffset.UtcNow;
+            Console.WriteLine("Create time " + case_.CreateTime );
             _context.Cases!.Add(case_);
             _context.SaveChanges();
             return _projectService.GetProjectDto(project.Id);
