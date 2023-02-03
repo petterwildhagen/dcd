@@ -15,7 +15,7 @@
         "downshift": "^6.1.7",
         "file-saver": "^2.0.5",
         "history": "^5.2.0",
-        "plotly.js": "^2.8.1",
+        "plotly.js": "^2.18.1",
         "plotly.js-dist": "^2.8.1",
         "react": "^17.0.2",
         "react-datasheet": "^1.4.9",
